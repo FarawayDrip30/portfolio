@@ -4,38 +4,130 @@
 		<title>Jack Harris' Portfolio</title>
 
 		<style>
-			.project{
-				border: 1px solid black;
+			h1, h2, h3, p, a {
+				font-family: nunito;
+			}
+			h1 { 
+				font-weight: 900; 
+				font-size: 5vw;
+				margin: 0px;
+			}
+			h2 {
+				font-weight: 700;
+				font-size: 2vw;
+				margin: 0px;
+			}
+
+			hr {
+				border: 2px solid black;
+				border-radius: 5px;
+				width: 100px;
+			}
+
+			.project_div {
+				display: flex;
+				justify-content: center;
+			}
+
+			.project {
+				border: 2px solid black;
 				border-radius: 5px;
 				padding: 16px;
+				margin: 12px;
 
 				text-align: center;
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+			}
+			.project img{
+				width: 90%;
+			}
+
+			.middle_column{
+				width: 75%;
+				min-width: 600px;
+				padding: 0px;
+			}
+
+			.links p { 
+				margin: 0px; 
+				margin-top: 16px;
+			}
+
+			.skills {
+				align-self: flex-end;
+				margin-top: auto; /* sets position to bottom of flex container */
+				text-align: center;
+
+				color: red;
+				font-weight: 600;
+				width: 100%;
+				line-height: 36px;
+			}
+			.skills a {
+				border: 1px solid #dddddd;
+				border-radius: 5px;
+
+				white-space: nowrap;
+				padding: 3px;
+				margin: 3px;
+			}
+
+			@font-face {
+				font-family: nunito;
+				src: url("res/Nunito-VariableFont_wght.ttf");
 			}
 		</style>
 	</head>
 	<body>
 		<center>
 			<h1>Jack Harris' Portfolio</h1>
-			<div id="highlights">
-				<h2>Highlights</h2>
-				<table>
-					<tr>
-						<td>
-							<div class="project">
-								<h3>Less Trains, Please...?</h3>
-								<img>
-								<p>Lorem ipsum dolor amet</p>
-							</div>
-						</td>
-						<td>
-							<div class="project">
-								<h3>Project Name</h3>
-								<img>
-								<p>Lorem ipsum dolor amet</p>
-							</div>
-						</td>
-					</tr>
-				</table>
+			<div class="middle_column">
+				<p>Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! Hello! </p>
+				<div id="highlights" class="middle_column">
+					<br>
+					<h2>Highlights</h2>
+					<hr>
+					<br><br>
+					<div class="project_div">
+					<div class="project">
+						<h3>Less Trains, Please...?</h3>
+						<img src="res/img/less_trains_please.png">
+						<div class="links">
+							<p><a href="https://flines.itch.io/lesstrainsplease">itch.io</a> • <a href="https://www.newgrounds.com/portal/view/1004711">Newgrounds</a> • <a href="https://armorgames.com/less-trains-please-game/19645">Armor Games</a> • <a href="https://github.com/FarawayDrip30/LessTrainsPlease">Github</a></p>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="skills">
+						<a>Godot</a>
+					</div>
+					</div>
+
+					<div class="project">
+						<h3>Project Name</h3>
+						<img>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="skills">
+						<a>I dunno</a>
+					</div>
+					</div>
+
+					<div class="project">
+						<h3>Critterball Server</h3>
+						<img src="res/img/critterball_server.png">
+						<div class="links">
+							<p><a href="https://farawaydrip30.itch.io/critterball-server">itch.io</a> • <a href="https://github.com/FarawayDrip30/Critterball-Local-Server">Github</a></p>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="skills">
+						<a>Javascript</a>
+						<a>Node.js</a>
+						<a>Express.js</a>
+						<a>Reverse Engineering</a>
+					</div>
+					</div>
+					</div>
+				</div>
 			</div>
 		</center>
 	</body>
